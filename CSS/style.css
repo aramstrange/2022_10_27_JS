@@ -1,0 +1,42 @@
+/* Lesson 2.2 Range
+
+#res222 {
+    height: 20px;
+    width: 20px;
+    background: yellow;
+} */
+
+/* Lesson 3 CSS generator
+
+#res31 {
+    width: 200px;
+    height: 100px;
+    background: green;
+}
+.txt31 {
+    width: 30px;
+} */
+
+/* Lesson 4 */
+
+#nav41 {
+    background: yellow;
+}
+
+.menu41 {
+    border: 2px solid blue;
+    display: inline-block;
+    height: 20px;
+    width: 140px;
+    position: relative;
+    cursor: pointer;
+    background: green;
+}
+
+.menu41 .submenu41 {
+    display: none;
+    height: 20px;
+    width: 140px;
+    background: blue;
+    cursor: pointer;
+}
