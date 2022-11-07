@@ -17,10 +17,11 @@
     width: 30px;
 } */
 
-/* Lesson 4 */
+/* Lesson 4 (Not completed)
 
 #nav41 {
     background: yellow;
+    width: 500px;
 }
 
 .menu41 {
@@ -28,15 +29,55 @@
     display: inline-block;
     height: 20px;
     width: 140px;
-    position: relative;
+    bottom: 30%;
     cursor: pointer;
     background: green;
+    vertical-align:top;
 }
 
 .menu41 .submenu41 {
     display: none;
+    position: relative;
     height: 20px;
     width: 140px;
     background: blue;
     cursor: pointer;
+}
+ */
+
+/* Lesson 5.1 Tabs */
+
+#tabs51 {
+    /* background: red; */
+}
+
+#tabs51 .tabHead51 {
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+    background: lightgray;
+    border-radius: 5px 5px 0 0;
+
+}
+
+#tabs51 .tabHeadShow51 {
+        background: lightblue;
+}
+
+#tabs51 .tabContent51 {
+    width: 200px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+    padding: 10px;
+    border-radius: 0 5px 5px 5px;
+    background: lightblue;
+    display: none;
+}
+
+#tabs51 .tabContentShow51 {
+    display: block;
 }

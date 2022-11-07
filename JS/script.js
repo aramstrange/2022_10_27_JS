@@ -80,15 +80,41 @@
 //     res31.style.borderRadius = ran31v.join("px ") + "px";
 // }
 
-// Lesson 4.1
+// // Lesson 4.1 (Not completed)
+
+// document.getElementById("nav41").onclick = function (event) {
+//     if (event.target.className == "menu41") {
+//         submenu = event.target.getElementsByClassName("submenu41");
+//         for (let i = 0; i < submenu.length; i++) {
+//             submenu[i].style.display = "block";
+//         }
+//     }
+// }
+
+// Lesson 5.1 Tabs
+
+var tabHead51 = document.getElementsByClassName("tabHead51");
+var tabContent51 = document.getElementsByClassName("tabContent51");
 
 
-document.getElementById("nav41").onclick = function (event) {
-    if (event.target.className == "menu41") {
-        
-        submenu = event.target.getElementsByClassName("submenu41");
-        for (let i = 0; i < submenu.length; i++) {
-        submenu[i].style.display="block";       
+// to find the number of the tab selected
+for (let i = 0; i < tabHead51.length; i++) {
+    tabHead51[i].onclick = function (event) {
+        for (let j = 0; j < tabHead51.length; j++) {
+            if (tabHead51[j] == event.target) {
+                ShowTab(j);
+                break;
+            }
         }
     }
-    }
+}
+
+// to show the tab selected
+function ShowTab(k) {
+    for (let i = 0; i < tabHead51.length; i++) {
+        tabHead51[i].classList.remove("tabHeadShow51");
+        tabContent51[i].classList.remove("tabContentShow51");
+    };
+    tabHead51[k].classList.add("tabHeadShow51");
+    tabContent51[k].classList.add("tabContentShow51");
+}
