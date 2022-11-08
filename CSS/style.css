@@ -1,23 +1,24 @@
-/* Lesson 2.2 Range
+/* Lesson 2.2 Range */
 
 #res222 {
     height: 20px;
     width: 20px;
     background: yellow;
-} */
+}
 
-/* Lesson 3 CSS generator
+/* Lesson 3 CSS generator */
 
 #res31 {
     width: 200px;
     height: 100px;
     background: green;
 }
+
 .txt31 {
     width: 30px;
-} */
+}
 
-/* Lesson 4 (Not completed)
+/* Lesson 4 (Not completed) */
 
 #nav41 {
     background: yellow;
@@ -32,7 +33,7 @@
     bottom: 30%;
     cursor: pointer;
     background: green;
-    vertical-align:top;
+    vertical-align: top;
 }
 
 .menu41 .submenu41 {
@@ -43,13 +44,9 @@
     background: blue;
     cursor: pointer;
 }
- */
+
 
 /* Lesson 5.1 Tabs */
-
-#tabs51 {
-    /* background: red; */
-}
 
 #tabs51 .tabHead51 {
     display: inline-block;
@@ -63,7 +60,7 @@
 }
 
 #tabs51 .tabHeadShow51 {
-        background: lightblue;
+    background: lightblue;
 }
 
 #tabs51 .tabContent51 {
@@ -80,4 +77,35 @@
 
 #tabs51 .tabContentShow51 {
     display: block;
+}
+
+
+/* Lesson 6 Modal Window */
+
+#modal6 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#modalContentl6 {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20% 5%;
+    padding: 10px;
+    background-color: gray;
+}
+
+#close6 {
+    cursor: default;
+    color: rgb(232, 229, 229);
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+
 }
