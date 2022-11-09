@@ -104,8 +104,26 @@
 #close6 {
     cursor: default;
     color: rgb(232, 229, 229);
-    float: right;
+    float: right;   
     font-size: 20px;
     font-weight: bold;
 
+}
+
+/* Lesson 7 Annimation */
+
+#container7 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    background-color: yellow;
+}
+
+#ball7 {
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid black; */
+    background-color: red;
 }

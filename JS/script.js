@@ -1,6 +1,6 @@
 // Lesson 1.1 Input: Checkbox
 
-document.getElementById('chbox11').addEventListener("change", func11);
+document.getElementById("chbox11").addEventListener("change", func11);
 
 var chbox11 = document.getElementById("chbox11");
 var res11 = document.getElementById("res11");
@@ -144,5 +144,23 @@ function closeModal() {
 function closeModalPlus(event) {
     if(modal6 == event.target){
         closeModal();
+    }
+}
+
+// Lesson 7 Annimation
+var btn7 = document.getElementById("btn7");
+var ball7 = document.getElementById("ball7");
+
+btn7.onclick = function () {
+    var position7 = 0;
+    var interval7 = setInterval (annimation7, 10);
+    function annimation7() {
+        if (position7 <=180) {
+            ball7.style.top = position7+"px";
+            ball7.style.left= position7+"px";
+            position7++;
+        }else{
+        clearInterval(interval7);
+    }
     }
 }
