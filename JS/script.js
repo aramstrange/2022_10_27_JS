@@ -164,3 +164,79 @@ btn7.onclick = function () {
     }
     }
 }
+
+// Lesson 8 Slider
+
+var slides8 = document.getElementsByClassName("slides8");
+var prev8 = document.getElementById("prev8");
+var next8 = document.getElementById("next8");
+var dot8 = document.getElementsByClassName("dot8");
+
+prev8.addEventListener("click", prevSlide);
+next8.addEventListener("click", nextSlide);
+
+var slideIndex8 = 0;
+showSlides8(slideIndex8);
+
+// function openning the previous slide
+function prevSlide() {
+    if (slideIndex8 > 0) {
+        slideIndex8--;
+    } else {
+        slideIndex8 = 2;
+    }
+    showSlides8(slideIndex8);
+    return slideIndex8;
+}
+
+// function openning the next slide
+function nextSlide() {
+    if (slideIndex8 < slides8.length - 1) {
+        slideIndex8++;
+    } else {
+        slideIndex8 = 0;
+    }
+    showSlides8(slideIndex8);
+    return slideIndex8;
+}
+
+// function to the slide and to run the selection of 
+// corresponding dot
+function showSlides8(k) {
+    for (var i = 0; i < slides8.length; i++) {
+        if (slides8[i] != slides8[k]) {
+            slides8[i].style.display = "none";
+        } else {
+            slides8[i].style.display = "block";
+            dotSelect8(i);
+            continue;
+        }
+    }
+}
+
+// to find the number of the dot selected and 
+// to run function showSlides8(k) for openning 
+// the corresponding slide
+for (var m = 0; m < dot8.length; m++) {
+    dot8[m].onclick = function (event) {
+        for (let n = 0; n < dot8.length; n++) {
+            if (dot8[n] == event.target) {
+                showSlides8(n);
+                break;
+            };
+        }
+    }
+}
+
+// function to select the dot corresponding to the opened slide
+function dotSelect8(q) {
+    for(var p = 0; p<dot8.length; p++){
+        dot8[p].classList.remove("dotActive8");
+    }
+    dot8[q].classList.add("dotActive8");
+    
+}
+
+
+
+
