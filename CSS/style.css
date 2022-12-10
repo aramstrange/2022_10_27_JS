@@ -213,13 +213,13 @@
     }
 }
 
-#dotContainer8{
+#dotContainer8 {
     text-align: center;
 }
 
 .dot8 {
     display: inline-block;
-    
+
     background: lightyellow;
     cursor: pointer;
     height: 10px;
@@ -237,4 +237,39 @@
 .dotActive8 {
     background: green;
     border-color: green;
+}
+
+
+/* Lesson 9 List filter */
+
+#srchInp9 {
+    width: 258px;
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 1px 8px 1px 8px;
+}
+
+#nameList9 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nameList9 li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    display: block;
+    width: 250px;
+    padding: 0 0 0 8px;
+    transition: 0.3s ease;
+}
+
+#nameList9 li a:hover:not(.letter9) {
+    background-color: rgb(223, 247, 255);
+}
+
+.letter9 {
+    background-color: lightblue;
+    width: 100%;
 }
