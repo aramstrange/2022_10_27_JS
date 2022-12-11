@@ -288,3 +288,20 @@ function func_divide10() {
     var num2_10 = parseInt(document.getElementById("num2_10").value);
     document.getElementById("result10").innerHTML = num1_10 / num2_10;
 }
+
+
+
+
+
+
+
+
+// Lesson 11 Google Maps
+
+function initMap() {
+  let map11 = new google.maps.Map(document.getElementById("map11"), {
+    center: { lat: 40.206714821966884, lng: 44.50783192856709 },
+    zoom: 15,
+  });
+}
+
