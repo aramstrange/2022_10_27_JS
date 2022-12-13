@@ -289,13 +289,6 @@ function func_divide10() {
     document.getElementById("result10").innerHTML = num1_10 / num2_10;
 }
 
-
-
-
-
-
-
-
 // Lesson 11 Google Maps
 
 function initMap() {
@@ -305,3 +298,16 @@ function initMap() {
   });
 }
 
+// Lesson 12 Modal - a Part of the script is on the index.html
+
+var modal12 = document.getElementById("modal12");
+var imgSmall12 =  document.getElementById("imgSmall12");
+var imgBig12 = document.getElementById("imgBig12");
+var descr12 = document.getElementById("descr12");
+
+imgSmall12.onclick = function () {
+    modal12.style.display = "block";
+    imgBig12.src = this.src;
+    descr12.innerHTML = this.alt;
+}
+    
